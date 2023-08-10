@@ -40,6 +40,7 @@ export const Comment = ({
         {/* Show reply by mapping */}
         {replies.map((user) => (
           <Reply
+            key={user.username}
             userImagePath={user.userImagePath}
             username={user.username}
             replyText={user.replyText}
